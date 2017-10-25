@@ -13,6 +13,8 @@
         <module>Chapter07</module>
         <module>Chapter08</module>
         <module>chapter10</module>
+        <module>JDKTest</module>
+        <module>chapter11</module>
     </modules>
 
 

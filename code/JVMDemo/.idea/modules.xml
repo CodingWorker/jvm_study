@@ -5,8 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/Chapter06/Chapter06.iml" filepath="$PROJECT_DIR$/Chapter06/Chapter06.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter07/Chapter07.iml" filepath="$PROJECT_DIR$/Chapter07/Chapter07.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter08/Chapter08.iml" filepath="$PROJECT_DIR$/Chapter08/Chapter08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JDKTest/JDKTest.iml" filepath="$PROJECT_DIR$/JDKTest/JDKTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/JVMDemo.iml" filepath="$PROJECT_DIR$/JVMDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter10/chapter10.iml" filepath="$PROJECT_DIR$/chapter10/chapter10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter11/chapter11.iml" filepath="$PROJECT_DIR$/chapter11/chapter11.iml" />
     </modules>
   </component>
 </project>

@@ -1,7 +1,5 @@
 package com.test.jvm_study.classloading;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
-import jdk.internal.dynalink.beans.StaticClass;
 
 /**
  * Created by IntelliJ IDEA
@@ -20,4 +18,5 @@ public class Test {
     public static void main(String[] args) {
 
     }
+
 }
