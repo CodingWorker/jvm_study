@@ -7,6 +7,23 @@
     <groupId>com.test.jvm_study</groupId>
     <artifactId>chapter04</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>com.test.jvm_study.Main</mainClass>
+                        <addClasspath>true</addClasspath>
+                        <classpathPrefix>lib/</classpathPrefix>
+                    </manifest>
+                </archive>
+                <classesDirectory>
+                </classesDirectory>
+            </configuration>
+        </plugin>
+    </plugins>
+    </build>
 </project>
