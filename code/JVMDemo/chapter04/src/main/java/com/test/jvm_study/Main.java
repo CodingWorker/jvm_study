@@ -10,7 +10,7 @@ public class Main {
         while(true){
             try{
                 System.out.println(new Date());
-                Thread.sleep(200);
+                Thread.sleep(1000);
             }catch(InterruptedException ex){
 
             }
