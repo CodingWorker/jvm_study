@@ -66,15 +66,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XDemo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="XDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/jvm_study/XDemo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
               <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeapDemo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/jvm_study/HeapDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#231#239#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GCOtptionDemo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/jvm_study/GCOtptionDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -326,6 +345,8 @@
         <option value="$PROJECT_DIR$/chapter04/src/main/java/com/test/jvm_study/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/jvm_study/JITDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/jvm_study/XDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/jvm_study/HeapDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/jvm_study/GCOtptionDemo.java" />
       </list>
     </option>
   </component>
@@ -494,7 +515,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.XDemo">
+  <component name="RunManager" selected="Application.GCOtptionDemo">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -543,7 +564,47 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.test.jvm_study.XDemo" />
-      <option name="VM_PARAMETERS" value="" />
+      <option name="VM_PARAMETERS" value="-XX:NewSize1m -XX:MaxNewSize1m" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="JVMDemo" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="HeapDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.test.jvm_study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.test.jvm_study.HeapDemo" />
+      <option name="VM_PARAMETERS" value="-XX:NewSize=10m -XX:MaxNewSize=10m -XX:+PrintTenuringDistribution" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="JVMDemo" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="GCOtptionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.test.jvm_study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.test.jvm_study.GCOtptionDemo" />
+      <option name="VM_PARAMETERS" value="-XX:NewSize=1m -XX:MaxNewSize=1m -XX:+DisableExplicitGC -XX:+PrintGCDetails" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1031,17 +1092,21 @@
       <envs />
       <method />
     </configuration>
-    <list size="4">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.JITDemo" />
       <item index="1" class="java.lang.String" itemvalue="Application.Main" />
       <item index="2" class="java.lang.String" itemvalue="Application.FillHeapDemo" />
       <item index="3" class="java.lang.String" itemvalue="Application.XDemo" />
+      <item index="4" class="java.lang.String" itemvalue="Application.HeapDemo" />
+      <item index="5" class="java.lang.String" itemvalue="Application.GCOtptionDemo" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.XDemo" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="2" class="java.lang.String" itemvalue="Application.FillHeapDemo" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.GCOtptionDemo" />
+        <item index="1" class="java.lang.String" itemvalue="Application.HeapDemo" />
+        <item index="2" class="java.lang.String" itemvalue="Application.XDemo" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="4" class="java.lang.String" itemvalue="Application.FillHeapDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -1058,12 +1123,12 @@
       <workItem from="1510619595486" duration="701000" />
       <workItem from="1510620367907" duration="4013000" />
       <workItem from="1510707474514" duration="2868000" />
-      <workItem from="1512174750663" duration="2303000" />
+      <workItem from="1512174750663" duration="5336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9885000" />
+    <option name="totallyTimeSpent" value="12918000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="1" />
@@ -1262,10 +1327,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/jvm_study/HeapDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#231#239#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/jvm_study/GCOtptionDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1326,7 +1406,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
